@@ -1,0 +1,108 @@
+{
+  "2504.12757v2": {
+    "title": "MCP Guardian: A Security-First Layer for Safeguarding MCP-Based AI System",
+    "authors": [
+      "Sonu Kumar",
+      "Anubhav Girdhar",
+      "Ritesh Patil",
+      "Divyansh Tripathi"
+    ],
+    "summary": "As Agentic AI gain mainstream adoption, the industry invests heavily in model\ncapabilities, achieving rapid leaps in reasoning and quality. However, these\nsystems remain largely confined to data silos, and each new integration\nrequires custom logic that is difficult to scale. The Model Context Protocol\n(MCP) addresses this challenge by defining a universal, open standard for\nsecurely connecting AI-based applications (MCP clients) to data sources (MCP\nservers). However, the flexibility of the MCP introduces new risks, including\nmalicious tool servers and compromised data integrity. We present MCP Guardian,\na framework that strengthens MCP-based communication with authentication,\nrate-limiting, logging, tracing, and Web Application Firewall (WAF) scanning.\nThrough real-world scenarios and empirical testing, we demonstrate how MCP\nGuardian effectively mitigates attacks and ensures robust oversight with\nminimal overheads. Our approach fosters secure, scalable data access for AI\nassistants, underscoring the importance of a defense-in-depth approach that\nenables safer and more transparent innovation in AI-driven environments.",
+    "pdf_url": "http://arxiv.org/pdf/2504.12757v2",
+    "published": "2025-04-17"
+  },
+  "2504.19997v1": {
+    "title": "Simplified and Secure MCP Gateways for Enterprise AI Integration",
+    "authors": [
+      "Ivo Brett"
+    ],
+    "summary": "The increased adoption of the Model Context Protocol (MCP) for AI Agents\nnecessitates robust security for Enterprise integrations. This paper introduces\nthe MCP Gateway to simplify self-hosted MCP server integration. The proposed\narchitecture integrates security principles, authentication, intrusion\ndetection, and secure tunneling, enabling secure self-hosting without exposing\ninfrastructure. Key contributions include a reference architecture, threat\nmodel mapping, simplified integration strategies, and open-source\nimplementation recommendations. This work focuses on the unique challenges of\nenterprise-centric, self-hosted AI integrations, unlike existing public MCP\nserver solutions.",
+    "pdf_url": "http://arxiv.org/pdf/2504.19997v1",
+    "published": "2025-04-28"
+  },
+  "2504.03767v2": {
+    "title": "MCP Safety Audit: LLMs with the Model Context Protocol Allow Major Security Exploits",
+    "authors": [
+      "Brandon Radosevich",
+      "John Halloran"
+    ],
+    "summary": "To reduce development overhead and enable seamless integration between\npotential components comprising any given generative AI application, the Model\nContext Protocol (MCP) (Anthropic, 2024) has recently been released and\nsubsequently widely adopted. The MCP is an open protocol that standardizes API\ncalls to large language models (LLMs), data sources, and agentic tools. By\nconnecting multiple MCP servers, each defined with a set of tools, resources,\nand prompts, users are able to define automated workflows fully driven by LLMs.\nHowever, we show that the current MCP design carries a wide range of security\nrisks for end users. In particular, we demonstrate that industry-leading LLMs\nmay be coerced into using MCP tools to compromise an AI developer's system\nthrough various attacks, such as malicious code execution, remote access\ncontrol, and credential theft. To proactively mitigate these and related\nattacks, we introduce a safety auditing tool, MCPSafetyScanner, the first\nagentic tool to assess the security of an arbitrary MCP server. MCPScanner uses\nseveral agents to (a) automatically determine adversarial samples given an MCP\nserver's tools and resources; (b) search for related vulnerabilities and\nremediations based on those samples; and (c) generate a security report\ndetailing all findings. Our work highlights serious security issues with\ngeneral-purpose agentic workflows while also providing a proactive tool to\naudit MCP server safety and address detected vulnerabilities before deployment.\n  The described MCP server auditing tool, MCPSafetyScanner, is freely available\nat: https://github.com/johnhalloran321/mcpSafetyScanner",
+    "pdf_url": "http://arxiv.org/pdf/2504.03767v2",
+    "published": "2025-04-02"
+  },
+  "2506.01804v2": {
+    "title": "A Study on the MCP x A2A Framework for Enhancing Interoperability of LLM-based Autonomous Agents",
+    "authors": [
+      "Cheonsu Jeong"
+    ],
+    "summary": "This paper provides an in-depth technical analysis and implementation\nmethodology of the open-source Agent-to-Agent (A2A) protocol developed by\nGoogle and the Model Context Protocol (MCP) introduced by Anthropic. While the\nevolution of LLM-based autonomous agents is rapidly accelerating, efficient\ninteractions among these agents and their integration with external systems\nremain significant challenges. In modern AI systems, collaboration between\nautonomous agents and integration with external tools have become essential\nelements for building practical AI applications. A2A offers a standardized\ncommunication method that enables agents developed in heterogeneous\nenvironments to collaborate effectively, while MCP provides a structured I/O\nframework for agents to connect with external tools and resources. Prior\nstudies have focused primarily on the features and applications of either A2A\nor MCP individually. In contrast, this study takes an integrated approach,\nexploring how the two protocols can complement each other to address\ninteroperability issues and facilitate efficient collaboration within complex\nagent ecosystems.",
+    "pdf_url": "http://arxiv.org/pdf/2506.01804v2",
+    "published": "2025-06-02"
+  },
+  "2505.23634v1": {
+    "title": "MCP Safety Training: Learning to Refuse Falsely Benign MCP Exploits using Improved Preference Alignment",
+    "authors": [
+      "John Halloran"
+    ],
+    "summary": "The model context protocol (MCP) has been widely adapted as an open standard\nenabling the seamless integration of generative AI agents. However, recent work\nhas shown the MCP is susceptible to retrieval-based \"falsely benign\" attacks\n(FBAs), allowing malicious system access and credential theft, but requiring\nthat users download compromised files directly to their systems. Herein, we\nshow that the threat model of MCP-based attacks is significantly broader than\npreviously thought, i.e., attackers need only post malicious content online to\ndeceive MCP agents into carrying out their attacks on unsuspecting victims'\nsystems.\n  To improve alignment guardrails against such attacks, we introduce a new MCP\ndataset of FBAs and (truly) benign samples to explore the effectiveness of\ndirect preference optimization (DPO) for the refusal training of large language\nmodels (LLMs). While DPO improves model guardrails against such attacks, we\nshow that the efficacy of refusal learning varies drastically depending on the\nmodel's original post-training alignment scheme--e.g., GRPO-based LLMs learn to\nrefuse extremely poorly. Thus, to further improve FBA refusals, we introduce\nRetrieval Augmented Generation for Preference alignment (RAG-Pref), a novel\npreference alignment strategy based on RAG. We show that RAG-Pref significantly\nimproves the ability of LLMs to refuse FBAs, particularly when combined with\nDPO alignment, thus drastically improving guardrails against MCP-based attacks.",
+    "pdf_url": "http://arxiv.org/pdf/2505.23634v1",
+    "published": "2025-05-29"
+  },
+  "2506.05364v1": {
+    "title": "Survey of LLM Agent Communication with MCP: A Software Design Pattern Centric Review",
+    "authors": [
+      "Anjana Sarkar",
+      "Soumyendu Sarkar"
+    ],
+    "summary": "This survey investigates how classical software design patterns can enhance\nthe reliability and scalability of communication in Large Language Model\n(LLM)-driven agentic AI systems, focusing particularly on the Model Context\nProtocol (MCP). It examines the foundational architectures of LLM-based agents\nand their evolution from isolated operation to sophisticated, multi-agent\ncollaboration, addressing key communication hurdles that arise in this\ntransition. The study revisits well-established patterns, including Mediator,\nObserver, Publish-Subscribe, and Broker, and analyzes their relevance in\nstructuring agent interactions within MCP-compliant frameworks. To clarify\nthese dynamics, the article provides conceptual schematics and formal models\nthat map out communication pathways and optimize data flow. It further explores\narchitectural variations suited to different degrees of agent autonomy and\nsystem complexity. Real-world applications in domains such as real-time\nfinancial processing and investment banking are discussed, illustrating how\nthese patterns and MCP can meet specific operational demands. The article\nconcludes by outlining open challenges, potential security risks, and promising\ndirections for advancing robust, interoperable, and scalable multi-agent LLM\necosystems.",
+    "pdf_url": "http://arxiv.org/pdf/2506.05364v1",
+    "published": "2025-05-26"
+  },
+  "2506.11019v1": {
+    "title": "Mind the Metrics: Patterns for Telemetry-Aware In-IDE AI Application Development using the Model Context Protocol (MCP)",
+    "authors": [
+      "Vincent Koc",
+      "Jacques Verre",
+      "Douglas Blank",
+      "Abigail Morgan"
+    ],
+    "summary": "AI development environments are evolving into observability first platforms\nthat integrate real time telemetry, prompt traces, and evaluation feedback into\nthe developer workflow. This paper introduces telemetry aware integrated\ndevelopment environments (IDEs) enabled by the Model Context Protocol (MCP), a\nsystem that connects IDEs with prompt metrics, trace logs, and versioned\ncontrol for real time refinement. We present design patterns for local prompt\niteration, CI based optimization, and autonomous agents that adapt behavior\nusing telemetry. Rather than focusing on a single algorithm, we describe an\narchitecture that supports integration with frameworks like DSPy, PromptWizard,\nand Prompts as Programs. We demonstrate this through Opik, an open source MCP\nserver for LLM telemetry, and position our approach within the emerging LLMOps\necosystem. This work lays a foundation for future research on prompt\noptimization, IDE agent tooling, and empirical benchmarking in telemetry rich\nAI development workflows.",
+    "pdf_url": "http://arxiv.org/pdf/2506.11019v1",
+    "published": "2025-05-14"
+  },
+  "2507.06323v1": {
+    "title": "Bridging AI and Software Security: A Comparative Vulnerability Assessment of LLM Agent Deployment Paradigms",
+    "authors": [
+      "Tarek Gasmi",
+      "Ramzi Guesmi",
+      "Ines Belhadj",
+      "Jihene Bennaceur"
+    ],
+    "summary": "Large Language Model (LLM) agents face security vulnerabilities spanning\nAI-specific and traditional software domains, yet current research addresses\nthese separately. This study bridges this gap through comparative evaluation of\nFunction Calling architecture and Model Context Protocol (MCP) deployment\nparadigms using a unified threat classification framework. We tested 3,250\nattack scenarios across seven language models, evaluating simple, composed, and\nchained attacks targeting both AI-specific threats (prompt injection) and\nsoftware vulnerabilities (JSON injection, denial-of-service). Function Calling\nshowed higher overall attack success rates (73.5% vs 62.59% for MCP), with\ngreater system-centric vulnerability while MCP exhibited increased LLM-centric\nexposure. Attack complexity dramatically amplified effectiveness, with chained\nattacks achieving 91-96% success rates. Counterintuitively, advanced reasoning\nmodels demonstrated higher exploitability despite better threat detection.\nResults demonstrate that architectural choices fundamentally reshape threat\nlandscapes. This work establishes methodological foundations for cross-domain\nLLM agent security assessment and provides evidence-based guidance for secure\ndeployment. Code and experimental materials are available at https: // github.\ncom/ theconsciouslab-ai/llm-agent-security.",
+    "pdf_url": "http://arxiv.org/pdf/2507.06323v1",
+    "published": "2025-07-08"
+  },
+  "2505.03864v1": {
+    "title": "From Glue-Code to Protocols: A Critical Analysis of A2A and MCP Integration for Scalable Agent Systems",
+    "authors": [
+      "Qiaomu Li",
+      "Ying Xie"
+    ],
+    "summary": "Artificial intelligence is rapidly evolving towards multi-agent systems where\nnumerous AI agents collaborate and interact with external tools. Two key open\nstandards, Google's Agent to Agent (A2A) protocol for inter-agent communication\nand Anthropic's Model Context Protocol (MCP) for standardized tool access,\npromise to overcome the limitations of fragmented, custom integration\napproaches. While their potential synergy is significant, this paper argues\nthat effectively integrating A2A and MCP presents unique, emergent challenges\nat their intersection, particularly concerning semantic interoperability\nbetween agent tasks and tool capabilities, the compounded security risks\narising from combined discovery and execution, and the practical governance\nrequired for the envisioned \"Agent Economy\". This work provides a critical\nanalysis, moving beyond a survey to evaluate the practical implications and\ninherent difficulties of combining these horizontal and vertical integration\nstandards. We examine the benefits (e.g., specialization, scalability) while\ncritically assessing their dependencies and trade-offs in an integrated\ncontext. We identify key challenges increased by the integration, including\nnovel security vulnerabilities, privacy complexities, debugging difficulties\nacross protocols, and the need for robust semantic negotiation mechanisms. In\nsummary, A2A+MCP offers a vital architectural foundation, but fully realizing\nits potential requires substantial advancements to manage the complexities of\ntheir combined operation.",
+    "pdf_url": "http://arxiv.org/pdf/2505.03864v1",
+    "published": "2025-05-06"
+  },
+  "2506.23260v1": {
+    "title": "From Prompt Injections to Protocol Exploits: Threats in LLM-Powered AI Agents Workflows",
+    "authors": [
+      "Mohamed Amine Ferrag",
+      "Norbert Tihanyi",
+      "Djallel Hamouda",
+      "Leandros Maglaras",
+      "Merouane Debbah"
+    ],
+    "summary": "Autonomous AI agents powered by large language models (LLMs) with structured\nfunction-calling interfaces have dramatically expanded capabilities for\nreal-time data retrieval, complex computation, and multi-step orchestration.\nYet, the explosive proliferation of plugins, connectors, and inter-agent\nprotocols has outpaced discovery mechanisms and security practices, resulting\nin brittle integrations vulnerable to diverse threats. In this survey, we\nintroduce the first unified, end-to-end threat model for LLM-agent ecosystems,\nspanning host-to-tool and agent-to-agent communications, formalize adversary\ncapabilities and attacker objectives, and catalog over thirty attack\ntechniques. Specifically, we organized the threat model into four domains:\nInput Manipulation (e.g., prompt injections, long-context hijacks, multimodal\nadversarial inputs), Model Compromise (e.g., prompt- and parameter-level\nbackdoors, composite and encrypted multi-backdoors, poisoning strategies),\nSystem and Privacy Attacks (e.g., speculative side-channels, membership\ninference, retrieval poisoning, social-engineering simulations), and Protocol\nVulnerabilities (e.g., exploits in Model Context Protocol (MCP), Agent\nCommunication Protocol (ACP), Agent Network Protocol (ANP), and Agent-to-Agent\n(A2A) protocol). For each category, we review representative scenarios, assess\nreal-world feasibility, and evaluate existing defenses. Building on our threat\ntaxonomy, we identify key open challenges and future research directions, such\nas securing MCP deployments through dynamic trust management and cryptographic\nprovenance tracking; designing and hardening Agentic Web Interfaces; and\nachieving resilience in multi-agent and federated environments. Our work\nprovides a comprehensive reference to guide the design of robust defense\nmechanisms and establish best practices for resilient LLM-agent workflows.",
+    "pdf_url": "http://arxiv.org/pdf/2506.23260v1",
+    "published": "2025-06-29"
+  }
+}

@@ -5,6 +5,9 @@ build/
 dist/
 wheels/
 *.egg-info
+pyproject.toml
+.python-version
+uv.lock
 
 # Environment Variables
 .env

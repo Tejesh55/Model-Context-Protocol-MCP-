@@ -616,6 +616,7 @@ dependencies = [
     { name = "langchain-groq" },
     { name = "mcp" },
     { name = "nest-asyncio" },
+    { name = "python-dotenv" },
 ]
 
 [package.metadata]
@@ -626,6 +627,7 @@ requires-dist = [
     { name = "langchain-groq", specifier = ">=0.3.6" },
     { name = "mcp", specifier = ">=1.11.0" },
     { name = "nest-asyncio", specifier = ">=1.6.0" },
+    { name = "python-dotenv", specifier = ">=1.1.1" },
 ]
 
 [[package]]

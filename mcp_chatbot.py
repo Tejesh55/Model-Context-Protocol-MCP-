@@ -25,7 +25,6 @@ class MCPChatBotLangChain:
         self.model_name = model_name
         self.chat_groq = ChatGroq(
             model=model_name,
-            api_key="",
             temperature=0.1,
             max_tokens=2048
         )
